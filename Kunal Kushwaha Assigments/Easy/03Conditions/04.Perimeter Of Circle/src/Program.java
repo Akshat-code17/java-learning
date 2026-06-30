@@ -25,7 +25,7 @@ public class Program {
             System.out.println("Perimeter Of Circle is: "+ perimeter);
         }
         else{
-            System.out.println("Enter Valid input!");
+            System.out.println("Enter Valid Input!");
         }
         in.close();
     }

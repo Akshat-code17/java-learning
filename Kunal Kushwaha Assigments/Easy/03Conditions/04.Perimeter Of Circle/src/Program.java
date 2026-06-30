@@ -11,24 +11,21 @@ public class Program {
 
         double radius = 0;
 
-        if(choice == 1){
+        if (choice == 1) {
             System.out.print("Enter Radius: ");
-            float r = in.nextFloat();
-            if(r > 0){
-                double perimeter = Math.PI * r * 2;
-                System.out.println("Perimeter Of Circle is "+perimeter);
-            }else{
-                System.out.println("Enter Valid input");
-            }
-        }else if(choice == 2){
+            radius = in.nextDouble();
+        }
+        else if (choice == 2) {
             System.out.print("Enter Diameter: ");
-            float d = in.nextFloat();
-            if(d > 0){
-                double perimeter = Math.PI * d;
-                System.out.println("Perimeter Of Circle is "+perimeter);
-            }else{
-                System.out.println("Enter Valid input");
-            }
+            radius = in.nextDouble() / 2;
+        }
+
+        if(radius > 0){
+            double perimeter = Math.PI * radius * 2;
+            System.out.println("Perimeter Of Circle is: "+ perimeter);
+        }
+        else{
+            System.out.println("Enter Valid input!");
         }
         in.close();
     }

@@ -2,9 +2,16 @@ import java.util.Scanner;
 
 public class Sum {
     public static void main(String[] args) {
-        int ans = sum2();
+//        int ans = sum2();
+//        System.out.println(ans);
+        int ans = sum3(20,30);
         System.out.println(ans);
 
+    }
+    // Pass the Value of numbers when you are calling the methods in main()
+    static int sum3(int a , int b){
+        int sum = a + b;
+        return sum;
     }
 
     // return the Value
@@ -37,7 +44,7 @@ public class Sum {
     }
 
     /*
-    return_type name() {
+    return_type name(arguments ) {
        // body
        return statement;
 
